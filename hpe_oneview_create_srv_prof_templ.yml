@@ -15,7 +15,7 @@
         data:
           name: "{{ server_profile_template_name }}"
           serverHardwareTypeName: "{{ server_hardware_type_name }}"
-          enclosureGroupName: "{{ enclosure_group_name }}"
+          #enclosureGroupName: "{{ enclosure_group_name }}"
           #initialScopeNames:
           #  - Renamed
           #  - test
