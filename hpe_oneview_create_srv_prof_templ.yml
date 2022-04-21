@@ -26,7 +26,6 @@
               - settingType: "AdministratorAccount"
                 args: 
                   deleteAdministratorAccount: false
-                  username: "{{ ilo_username }}"
                   password: "{{ ilo_password }}"
           bios:
             complianceControl: "Checked"
