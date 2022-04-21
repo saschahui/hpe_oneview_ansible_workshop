@@ -44,13 +44,13 @@
             manageMode: true
             mode: "UEFIOptimized"
             pxeBootPolicy: "Auto"
-            secureBoot: "Disabled"
+            secureBoot: "Enabled"
           connectionSettings:
             complianceControl: "CheckedMinimum"
             manageConnections: true
             connections: 
               - id: 1
-                name: "Red Hat Wrkld"
+                name: "Technik"
                 functionType: "Ethernet"
                 networkName: "{{ deployment_network_name }}"
                 ##networkName: null
@@ -97,7 +97,6 @@
       delegate_to: localhost
       register: result
       run_once: true
-
 
     - debug: msg= "{{ result.msg }}"
 
